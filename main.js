@@ -7,8 +7,8 @@ let user_per_page = 4;
 let limit = document.getElementById("limit")
 let btn = document.getElementById("btn")
 btn.addEventListener("click", function(){
-    console.log("salom");
-    
+    user_per_page = limit.value
+    getPhotos()
 })
 
 document.addEventListener("DOMContentLoaded", function(){
